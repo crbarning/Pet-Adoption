@@ -38,7 +38,7 @@ body {
   .icon {
     height: 40px;
   }
-  
+
   .main-banner {
     background-image: url(../img/banner.png);
     background-size: cover;
@@ -53,21 +53,24 @@ body {
   }
   
   section.journey {
-    width: 940px;
-    height: 450px;
     margin: 0 auto;
     padding: 30px;
   }
   section.journey h1 {
     text-align: center;
     margin-bottom: 20px;
-    font-size: 40px;
+    font-size: 3.0em;
     font-family: "Pacifico", cursive;
     letter-spacing: 3px;
   }
+ .journey-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+ }
   
   section.journey aside {
-    text-align: center;
+   text-align: center;
     width: 200px;
     height: 200px;
     float: left;
@@ -302,4 +305,28 @@ body {
     margin: auto;
     padding: 60px;
   }
-  
+
+  /* Tablet*/ /*
+  @media (max-width: 768px) {
+    .main-container .main-menu li a {
+        font-size: 18px;
+    }
+    .icon {
+        height: 35px;
+      }
+      section.journey {
+        width: 100%;
+        margin: 0 auto;
+      }
+      section.journey aside {
+        width: 33%;
+        height: auto;
+        display:block;
+      }
+      
+      section.journey aside img {
+        width: 100%;
+        height: auto;
+      }
+  }
+  */
