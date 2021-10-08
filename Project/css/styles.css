@@ -156,8 +156,9 @@ body {
     padding-top: 80px;
   }
   .contact {
-    width: 800px;
-    padding: 50px;
+    height: 400px;
+    width: 50%;
+    padding: 50px 50px 50px 20px;
     margin-top: 60px;
     background-color: rgb(202, 210, 197);
     margin: 0 auto;
@@ -291,6 +292,7 @@ body {
     font-size: 40px;
     font-family: "Pacifico", cursive;
     letter-spacing: 3px;
+    
   }
   
   .grid {
@@ -349,10 +351,11 @@ body {
   @media (max-width: 320px) {  
     .icon {
           display: none;
-      }
+      } 
       .contact {
-          width: 200px;
-      }
+          width: auto;
+          margin: 10px;
+      } 
       .headline .button {
           width: 100%;
       }
@@ -361,8 +364,12 @@ body {
         height: auto;
       }
       .first {
-          width: 300px;
-          margin-left: 15%;
+          width: 100%;
+        
+      }
+      .grid .pet img {
+        width: 100%;
+        height: auto;
       }
     }
   
