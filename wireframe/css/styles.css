@@ -40,7 +40,7 @@ body {
   }
   
   .main-banner {
-    background-image: url(./img/placeholder.png);
+    background-image: url(https://via.placeholder.com/150);
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
@@ -151,7 +151,7 @@ body {
     width: 800px;
     padding: 50px;
     margin-top: 60px;
-    background-color: rgb(202, 210, 197);
+    background-color: grey;
     margin: 0 auto;
   }
   .form h1 {
