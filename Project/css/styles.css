@@ -68,40 +68,44 @@ body {
     flex-wrap: wrap;
     justify-content: space-evenly;
  }
-  
+
   section.journey aside {
-   text-align: center;
+    text-align: center;
     width: 200px;
-    height: 200px;
+    height: auto;
     float: left;
-    margin: 50px;
+    margin: 20px;
   }
   
   section.journey aside img {
     width: 100%;
-    height: 150px;
-    background: #696969;
+    height: auto;
   }
-  
+
   .headline {
-    width: 500px;
-    margin: auto;
-    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
   }
   
   .headline h1 {
     font-family: "Pacifico", cursive;
     letter-spacing: 3px;
+    text-align: center;
+    padding: auto;
+  }
+  .headline {
+      text-align: center;
   }
   
   .headline .button {
-    width: 200px;
-    padding: 10px;
+    width: 250px;
+    padding: 15px;
     background: rgb(47, 62, 70);
     border: 1px white solid;
     border-radius: 20px;
     cursor: pointer;
     transition-duration: 0.4s;
+
   }
   .button a {
     text-decoration: none;
@@ -140,6 +144,7 @@ body {
   footer {
     width: 100%;
     height: 40px;
+    margin-top:30px;
     background-color: rgb(202, 210, 197);
     position: fixed;
     bottom: 0;
@@ -306,27 +311,58 @@ body {
     padding: 60px;
   }
 
-  /* Tablet*/ /*
+  /* Tablet*/ 
   @media (max-width: 768px) {
     .main-container .main-menu li a {
         font-size: 18px;
+        font-weight: normal;
     }
     .icon {
         height: 35px;
       }
-      section.journey {
-        width: 100%;
-        margin: 0 auto;
+      .headline {
+          width: none;
       }
-      section.journey aside {
-        width: 33%;
-        height: auto;
-        display:block;
+      .grid {
+        grid-template-columns: 1fr;
+        margin: auto 0;
+        width: auto;
       }
-      
-      section.journey aside img {
-        width: 100%;
-        height: auto;
+      .info {
+        text-align: center;
+        padding: 20px;
+      }
+      .headline .button {
+        width: 200px;
+    }
+      .pet {
+         padding: 20px;
+      }
+      footer {
+          display: none;
+      }
+      .contact {
+          width: 400px;
       }
   }
-  */
+  
+  @media (max-width: 320px) {  
+    .icon {
+          display: none;
+      }
+      .contact {
+          width: 200px;
+      }
+      .headline .button {
+          width: 100%;
+      }
+      .gallery .gallery-item {
+        width: 100%;
+        height: auto;
+      }
+      .first {
+          width: 300px;
+          margin-left: 15%;
+      }
+    }
+  
