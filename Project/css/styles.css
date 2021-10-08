@@ -1,0 +1,305 @@
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(16, 22, 24);
+  }
+  /* Main page*/
+  .main-container {
+    width: 100%;
+    background-color: rgb(202, 210, 197);
+    position: fixed;
+    top: 0;
+  }
+  
+  .main-menu {
+    margin: 0 auto;
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 70px;
+    list-style: none;
+  }
+  
+  .main-container .main-menu li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(47, 62, 70);
+    text-shadow: 1px 1px 2px rgb(82, 121, 111);
+    font-size: 20px;
+  }
+  
+  .menu-item {
+    cursor: pointer;
+  }
+  
+  .icon {
+    height: 40px;
+  }
+  
+  .main-banner {
+    background-image: url(../img/banner.png);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    min-height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+  }
+  
+  section.journey {
+    width: 940px;
+    height: 450px;
+    margin: 0 auto;
+    padding: 30px;
+  }
+  section.journey h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-family: "Pacifico", cursive;
+    letter-spacing: 3px;
+  }
+  
+  section.journey aside {
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin: 50px;
+  }
+  
+  section.journey aside img {
+    width: 100%;
+    height: 150px;
+    background: #696969;
+  }
+  
+  .headline {
+    width: 500px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .headline h1 {
+    font-family: "Pacifico", cursive;
+    letter-spacing: 3px;
+  }
+  
+  .headline .button {
+    width: 200px;
+    padding: 10px;
+    background: rgb(47, 62, 70);
+    border: 1px white solid;
+    border-radius: 20px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+  }
+  .button a {
+    text-decoration: none;
+    color: rgb(202, 210, 197);
+    font-weight: bold;
+  }
+  
+  .button:hover {
+    background-color: rgb(202, 210, 197);
+  }
+  
+  .button:hover a {
+    color: rgb(47, 62, 70);
+  }
+  
+  section.gallery {
+    margin: 0 auto;
+    max-width: 1125px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px;
+  }
+  
+  .gallery-item {
+    width: 330px;
+    height: 265px;
+    margin: 10px;
+    text-decoration: none;
+  }
+  
+  .gallery-item img {
+    position: absolute;
+  }
+  
+  footer {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(202, 210, 197);
+    position: fixed;
+    bottom: 0;
+  }
+  
+  /* FORM */
+  .form {
+    margin: auto;
+    padding-top: 80px;
+  }
+  .contact {
+    width: 800px;
+    padding: 50px;
+    margin-top: 60px;
+    background-color: rgb(202, 210, 197);
+    margin: 0 auto;
+  }
+  .form h1 {
+    text-align: center;
+    font-size: 50px;
+    font-family: "Pacifico", cursive;
+    letter-spacing: 3px;
+    margin: 0;
+    padding-top: 30px;
+  }
+  .form h3 {
+    text-align: center;
+    line-height: 2.8;
+  }
+  
+  #fs-frm input,
+  #fs-frm select,
+  #fs-frm textarea,
+  #fs-frm fieldset,
+  #fs-frm optgroup,
+  #fs-frm label,
+  #fs-frm #card-element:disabled {
+    font-size: 100%;
+    color: rgb(16, 22, 24);
+    border: none;
+    border-radius: 0;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  #fs-frm label,
+  #fs-frm legend,
+  #fs-frm ::placeholder {
+    font-size: 0.825rem;
+    margin-bottom: 0.5rem;
+    padding-top: 0.2rem;
+    display: flex;
+    align-items: baseline;
+  }
+  
+  /* border, padding, margin, width */
+  #fs-frm input,
+  #fs-frm select,
+  #fs-frm textarea,
+  #fs-frm #card-element {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 0.75em 1rem;
+    margin-bottom: 1.5rem;
+  }
+  #fs-frm input:focus,
+  #fs-frm select:focus,
+  #fs-frm textarea:focus {
+    background-color: white;
+    outline-style: solid;
+    outline-width: thin;
+    outline-color: gray;
+    outline-offset: -1px;
+  }
+  #fs-frm [type="text"],
+  #fs-frm [type="email"] {
+    width: 100%;
+  }
+  #fs-frm [type="button"],
+  #fs-frm [type="submit"],
+  #fs-frm [type="reset"] {
+    width: auto;
+    cursor: pointer;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+  }
+  #fs-frm [type="button"]:focus,
+  #fs-frm [type="submit"]:focus,
+  #fs-frm [type="reset"]:focus {
+    outline: none;
+  }
+  #fs-frm [type="submit"],
+  #fs-frm [type="reset"] {
+    margin-bottom: 0;
+  }
+  #fs-frm select {
+    text-transform: none;
+  }
+  
+  #fs-frm [type="checkbox"] {
+    -webkit-appearance: checkbox;
+    -moz-appearance: checkbox;
+    appearance: checkbox;
+    display: inline-block;
+    width: auto;
+    margin: 0 0.5em 0 0 !important;
+  }
+  
+  #fs-frm [type="radio"] {
+    -webkit-appearance: radio;
+    -moz-appearance: radio;
+    appearance: radio;
+  }
+  
+  /* address, locale */
+  #fs-frm fieldset.locale input[name="city"],
+  #fs-frm fieldset.locale select[name="state"],
+  #fs-frm fieldset.locale input[name="postal-code"] {
+    display: inline;
+  }
+  #fs-frm fieldset.locale input[name="city"] {
+    width: 52%;
+  }
+  #fs-frm fieldset.locale select[name="state"],
+  #fs-frm fieldset.locale input[name="postal-code"] {
+    width: 20%;
+  }
+  #fs-frm fieldset.locale input[name="city"],
+  #fs-frm fieldset.locale select[name="state"] {
+    margin-right: 3%;
+  }
+  /* Adopt page*/
+  .first {
+    padding-top: 40px;
+    text-align: center;
+  }
+  
+  .first h2 {
+    margin-bottom: 0;
+    font-size: 40px;
+    font-family: "Pacifico", cursive;
+    letter-spacing: 3px;
+  }
+  
+  .grid {
+    margin: 0 auto;
+    width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .pet {
+    margin: auto;
+    padding: 60px;
+  }
+  
+  .info {
+    text-align: Left;
+    margin: auto;
+    padding: 60px;
+  }
+  
