@@ -15,7 +15,7 @@ body {
     margin: 0 auto;
     max-width: 800px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding-left: 40px;
     padding-right: 40px;
@@ -29,12 +29,16 @@ body {
     text-shadow: 1px 1px 2px rgb(82, 121, 111);
     font-size: 20px;
   }
-  .menu-item {
-    cursor: pointer;
-  }
-  .icon {
+  .menu-item .icon{
     height: 40px;
   }
+  .menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+  }
+
+
 
 /* Banner */
   .main-banner {
@@ -227,13 +231,6 @@ body {
 
   /* Media queries */ 
   @media (max-width: 768px) {
-    .main-container .main-menu li a {
-        font-size: 18px;
-        font-weight: normal;
-    }
-    .icon {
-        height: 35px;
-      }
       .headline {
           width: none;
       }
@@ -260,10 +257,7 @@ body {
       }
   }
   
-  @media (max-width: 320px) {  
-    .icon {
-          display: none;
-      } 
+  @media (max-width: 320px) {   
       .contact-us {
           margin: 10px;
       } 
