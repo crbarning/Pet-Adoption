@@ -1,7 +1,6 @@
 * {
   padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+  margin: 0; 
 }
 
 body {
@@ -13,6 +12,9 @@ body {
 
 header {
   background-color: rgb(202, 210, 197);
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 li {
@@ -34,6 +36,7 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 0 24px;
+
 }
 
 .nav-menu {
@@ -77,6 +80,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 70px;
 }
 
 /* First section */
@@ -108,7 +112,6 @@ section.journey aside img {
   height: auto;
 }
 
-/* Pets to adopt */
 .headline {
   padding-left: 20%;
   padding-right: 20%;
@@ -117,7 +120,8 @@ section.journey aside img {
   font-family: "Pacifico", cursive;
   letter-spacing: 3px;
   text-align: center;
-  padding: auto;
+  font-size: 40px;
+  padding: 15px;
 }
 .headline {
   text-align: center;
@@ -152,6 +156,7 @@ section.gallery {
   justify-content: space-around;
   padding: 40px;
 }
+
 .gallery-item {
   width: 330px;
   height: 265px;
@@ -231,6 +236,7 @@ textarea {
 .first {
   padding-top: 40px;
   text-align: center;
+  margin-top: 70px;
 }
 .first h2 {
   margin-bottom: 0;
