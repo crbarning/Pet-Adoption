@@ -47,9 +47,9 @@ a {
 }
 
 .navbar .logo {
-  width: 40px;
-  height: auto;
-  opacity: 0.75;
+  width: auto;
+  height: 70px;
+  opacity: 0.85;
 }
 
 .nav-link:hover {
@@ -75,7 +75,7 @@ a {
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 90vh;
   min-height: 800px;
   display: flex;
   flex-direction: column;
